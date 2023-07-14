@@ -1,0 +1,88 @@
+@import '../../../constant/colors.scss';
+@import "../../../constant/mixin.scss";
+@import '../../../constant/box-shadow.scss';
+
+.navigation-page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    .menu-bar {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-between;
+        padding: .5rem 2rem;
+        align-items: center;
+        background-color: $Color-Primary;
+        box-shadow: $Box-Shadow-dark;
+        position: fixed;
+        z-index: 999999;
+        width: 100%;
+        height: 6rem;
+    }
+
+
+
+    .logo-container {
+        height: auto;
+        width: 100px;
+    }
+
+
+    #nav {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        transition: all .2s ease-in;
+        color: $Color-White;
+        padding-bottom: 5px;
+
+
+        &:hover {
+            color: $Color-Blue;
+        }
+
+    }
+
+    .active_tab {
+        border-bottom: 3px solid $Color-Blue;
+        border-radius: 2px;
+
+      
+    }
+
+    .kust-logo-container {
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: 100px;
+    }
+
+    .kust-logo {
+        padding-left: 20px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .burger-menu-bar {
+        font-size: 25px;
+        color: $Color-White ;
+        display: none;
+    }
+
+    .page-content {
+        position: absolute;
+        height: calc(100% - 6rem);
+        top: 6rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}

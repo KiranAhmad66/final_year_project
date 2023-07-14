@@ -1,0 +1,56 @@
+@import "../../../constant/colors.scss";
+@import "../../../constant/box-shadow.scss";
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    a {
+        color: $Color-Primary;
+        text-decoration: none;
+    }
+}
+tbody{
+    width: 100%;
+}
+
+.student-table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    height: 100%;
+
+}
+
+.student-table-content {
+    display: flex;
+    flex-direction: column;
+    background-color: $Color-White;
+    height: 100%;
+    gap: 2rem;
+    padding: 3rem;
+    overflow: auto;
+}
+.student-table-data{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

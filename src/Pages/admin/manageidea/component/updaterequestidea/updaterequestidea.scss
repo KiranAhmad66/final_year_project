@@ -1,0 +1,8 @@
+@import "../../../../../constant/colors.scss";
+
+
+.project-table-form-button {
+    &:hover {
+        background-color: $button-hover;
+    }
+}

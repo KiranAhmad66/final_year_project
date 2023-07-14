@@ -1,0 +1,43 @@
+@import '../../../constant/colors.scss';
+
+.impact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 4rem 4rem 4rem;
+    .impact-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    .impact-table {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .impact-table-detail {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .impact-table-error {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .impact-button {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+.toppick-pagination {
+    display: flex;
+    justify-content: flex-end;
+}

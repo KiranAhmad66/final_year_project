@@ -1,0 +1,124 @@
+@import '../../../constant/colors.scss';
+@import '../../../constant/box-shadow.scss';
+
+.fyp-container {
+    padding: 3rem 7rem;
+    background-color: $backgroundcolor;
+
+    .fyp-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .fyp-section {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 2rem;
+    }
+
+    .fyp-heading {
+        display: flex;
+        color: $Color-Secondary;
+        background-color: $Color-White;
+        padding: 1.5rem 2rem;
+        box-shadow: $Box-Shadow-light;
+    }
+
+
+    .fyp-heading-text {
+
+        font-size: 1.8rem;
+        text-transform: uppercase;
+
+       
+    }
+
+    .fyp-section-content {
+        background-color: $Color-White;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        box-shadow: $Box-Shadow-light;
+
+    }
+
+    .fyp-topic-table {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        background-color: $Color-bg;
+        color: $Color-Primary;
+    }
+
+    .technical-topic {
+        font-size: .8rem;
+        padding: 0 30px;
+
+    }
+
+    .technical-topic-name {
+        display: flex;
+        border-left: 1px solid $Color-Secondary;
+        flex-direction: column;
+    }
+
+    .technical-topic-name-r {
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $Color-Secondary;
+        }
+    }
+
+    .technical-row-item {
+        font-size: 1.2rem;
+        padding: .8rem 3rem;
+
+    }
+
+    .approach-table {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $Color-Grey;
+
+
+    }
+
+    .approach-row {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    .approach-row-item {
+        display: flex;
+        justify-content: center;
+        background-color: $Color-Light-Grey;
+        border: 1px solid $Color-Grey;
+        color: $Color-Primary;
+        width: 20vw;
+        flex-wrap: nowrap;
+    }
+
+    .A-row-1 {
+        margin: 0 5%;
+
+    }
+
+    .A-row-2 {
+        margin: 0 10%;
+
+    }
+
+    .approach-text {
+        font-size: 1.2rem;
+        padding: .8rem 0;
+
+
+    }
+}

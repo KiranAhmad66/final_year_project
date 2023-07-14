@@ -1,0 +1,84 @@
+@import '../../constant/colors.scss';
+@import '../../constant/box-shadow.scss';
+
+.Dashboardcarddirective {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    width: 100%;
+    height: 18rem;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 2rem 2rem;
+        color: $Color-White;
+        border-radius: 0.5rem;
+        width: 23rem;
+        box-shadow: $Box-Shadow-light;
+        transition: all .1s;    
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        &:hover .Dashboardcarddirective-icon {
+            transform: scale(1.1);
+        }
+
+        &:hover .Dashboardcarddirective-container-item {
+            transform: scale(1.1);
+        }
+    }
+
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        &-item {
+            font-size: 5rem;
+            font-weight: 600;
+
+
+            p {
+                display: flex;
+                font-size: 1.3rem;
+                color: $Color-Primary;
+                width: max-content;
+            }
+        }
+    }
+
+    &-icon {
+        font-size: 5rem;
+    }
+
+    &-action-btn {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-weight: 600;
+            width: max-content;
+            color: $Color-Dark-Grey;
+
+            &:hover {
+                color: $Color-bg;
+            }
+
+
+        }
+    }
+
+}

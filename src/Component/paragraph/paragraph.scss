@@ -1,0 +1,12 @@
+.text-container {
+    display: flex;
+
+    .text {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-break: strict;
+        line-height: 1.6;
+        word-wrap: break-word;
+
+    }
+}

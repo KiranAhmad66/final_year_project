@@ -1,0 +1,32 @@
+    @import "../../constant/colors.scss";
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: $Color-Blue;
+            padding: 0 200px;
+            font-size: 30px;
+
+        }
+
+        &::before {
+            content: " ";
+            display: block;
+            height: 5px;
+            width: 200px;
+            border-radius: 50px;
+            background: $Color-Blue;
+        }
+
+        &::after {
+            content: " ";
+            display: block;
+            height: 5px;
+            width: 200px;
+            border-radius: 50px;
+            background: $Color-Blue;
+        }
+    }

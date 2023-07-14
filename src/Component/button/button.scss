@@ -1,0 +1,27 @@
+  @import "../../constant/colors.scss";
+
+  .blue-btn {
+      background-color: $Color-Blue;
+      color: $Color-White;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 3px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+          background-color: $button-hover ;
+      }
+  }
+
+  .disabled {
+      background-color: $Color-Grey;
+      color: $Color-Dark-Grey;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 3px;
+      font-size: 1rem;
+      cursor: not-allowed;
+      transition: background-color 0.3s ease-in-out;
+  }

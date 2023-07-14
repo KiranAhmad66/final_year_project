@@ -1,0 +1,21 @@
+@import '../../../constant/colors.scss';
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    &-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0 200px;
+        row-gap: 80px;
+    }
+
+    &-img {
+        display: flex;
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+
+    }
+}

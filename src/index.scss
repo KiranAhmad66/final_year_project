@@ -1,0 +1,58 @@
+@import "./constant/colors.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $Color-Black;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow: auto;
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+
+  }
+}
+
+#root {
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+a {
+  color: $Color-Black;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+
+}
+
+body::-webkit-scrollbar-track {
+  background-color: $Color-Light-Grey;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $Color-Grey;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: $Color-Dark-Grey;
+
+}
+
+#root {
+  height: 100%;
+}
